@@ -12,6 +12,7 @@ export default {
         black: "rgb(36,36,36)",
         background: "rgb(245,245,245)",
         orange: "rgb(240, 100, 73)",
+        photobg: "rgb(28, 29, 37)",
       },
       keyframes: {
         scroll: {
@@ -21,6 +22,9 @@ export default {
       },
       animation: {
         scroll: "scroll 1s infinite alternate-reverse",
+      },
+      scale: {
+        "108": "1.08",
       },
     },
     fontFamily: {
