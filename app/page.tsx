@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Mailbtn from "./components/Mailbtn";
 import Scroll from "./components/Scroll";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       </section>
       <section className="py-12">
         <Projects />
+      </section>
+      <section className="py-12">
+        <Footer />
       </section>
     </>
   );
