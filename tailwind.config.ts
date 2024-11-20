@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "rgb((245,245,245)",
+        background: "rgb(245,245,245)",
         orange: "rgb(240, 100, 73)",
       },
     },
