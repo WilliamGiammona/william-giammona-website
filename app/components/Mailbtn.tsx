@@ -5,7 +5,7 @@ const Mailbtn = () => {
   return (
     <div>
       <Mail
-        className="text-mail rounded-lg cursor-pointer absolute bottom-8 right-10 "
+        className="text-black rounded-lg cursor-pointer absolute bottom-8 right-10 "
         size={70}
       />
     </div>

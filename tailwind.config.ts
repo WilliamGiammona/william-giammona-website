@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        mail: "rgb(36,36,36)",
+        black: "rgb(36,36,36)",
         background: "rgb(245,245,245)",
         orange: "rgb(240, 100, 73)",
       },

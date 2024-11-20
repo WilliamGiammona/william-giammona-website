@@ -8,7 +8,7 @@ const Scroll = () => {
   h-8
   border-2 
   border-solid 
-  border-mail
+  border-black
   rounded-3xl
   flex 
   items-center 
@@ -21,7 +21,7 @@ const Scroll = () => {
   after:absolute 
   after:w-1
   after:h-1 
-  after:bg-mail
+  after:bg-black
 "
     ></div>
   );
