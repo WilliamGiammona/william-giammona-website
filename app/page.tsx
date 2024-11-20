@@ -13,7 +13,7 @@ export default function Home() {
         <Mailbtn />
         <Scroll />
       </section>
-      <section className="py-16">
+      <section className="py-12">
         <Projects />
       </section>
     </>
