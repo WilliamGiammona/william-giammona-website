@@ -22,17 +22,26 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Linkedin className="bg-orange text-white rounded-lg p-2" size={32} />
+          <Linkedin
+            className="bg-orange text-white p-2 rounded-lg transition-all duration-300 ease-in-out hover:scale-110"
+            size={32}
+          />
         </Link>
         <Link
           href="https://github.com/WilliamGiammona"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Github className="bg-orange text-white p-2 rounded-lg" size={32} />
+          <Github
+            className="bg-orange text-white p-2 rounded-lg transition-all duration-300 ease-in-out hover:scale-110"
+            size={32}
+          />
         </Link>
         <Link href="/" target="_blank" rel="noopener noreferrer">
-          <FileText className="bg-orange text-white p-2 rounded-lg" size={32} />
+          <FileText
+            className="bg-orange text-white p-2 rounded-lg transition-all duration-300 ease-in-out hover:scale-110"
+            size={32}
+          />
         </Link>
       </div>
     </header>
