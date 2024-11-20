@@ -5,7 +5,7 @@ import { Contrast } from "lucide-react";
 
 const Nav = () => {
   return (
-    <nav className="font-sans flex justify-between w-full max-w-6xl mx-auto h-24 items-center px-14">
+    <nav className="font-sans flex justify-between w-full max-w-6xl mx-auto h-24 items-center px-5">
       <figure>
         <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
       </figure>
