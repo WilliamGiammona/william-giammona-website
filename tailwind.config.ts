@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#f5f5f5",
-        orange: "#f06449",
+        background: "rgb((245,245,245)",
+        orange: "rgb(240, 100, 73)",
       },
     },
     fontFamily: {
