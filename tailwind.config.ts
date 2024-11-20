@@ -13,6 +13,15 @@ export default {
         background: "rgb(245,245,245)",
         orange: "rgb(240, 100, 73)",
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateY(3px)" },
+          "100%": { transform: "translateY(-3px)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 1s infinite alternate-reverse",
+      },
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],

@@ -22,6 +22,13 @@ const Scroll = () => {
   after:w-1
   after:h-1 
   after:bg-black
+  after:rounded-sm
+  after:animate-scroll
+  transition-all 
+  duration-300 
+  ease-in-out 
+  hover:scale-110
+  cursor-pointer
 "
     ></div>
   );
