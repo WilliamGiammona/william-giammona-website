@@ -7,6 +7,11 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      colors: {
+        orange: "#f06449",
+      },
+    },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
     },
