@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: "#f5f5f5",
         orange: "#f06449",
       },
     },
