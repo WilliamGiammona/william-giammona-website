@@ -12,6 +12,8 @@ export default function Home() {
         <Hero />
         <Mailbtn />
         <Scroll />
+      </section>
+      <section className="py-16">
         <Projects />
       </section>
     </>
