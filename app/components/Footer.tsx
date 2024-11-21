@@ -10,17 +10,25 @@ const Footer = () => {
         <Image src="/images/logo.png" alt="Logo" width={70} height={70} />
       </figure>
       <ul className="flex w-full justify-around max-w-lg text-white my-5">
-        <li>
-          <Link href="/">Github</Link>
+        <li className="relative">
+          <Link className="link-footer" href="/">
+            Github
+          </Link>
         </li>
-        <li>
-          <Link href="/">LinkedIn</Link>
+        <li className="relative">
+          <Link className="link-footer" href="/">
+            LinkedIn
+          </Link>
         </li>
-        <li>
-          <Link href="/">Contact</Link>
+        <li className="relative">
+          <Link className="link-footer" href="/">
+            Contact
+          </Link>
         </li>
-        <li>
-          <Link href="/">Resume</Link>
+        <li className="relative">
+          <Link className="link-footer" href="/">
+            Resume
+          </Link>
         </li>
       </ul>
       <div className="text-white">
