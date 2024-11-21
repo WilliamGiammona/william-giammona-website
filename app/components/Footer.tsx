@@ -5,9 +5,9 @@ import { Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <>
+    <section className="flex flex-col items-center">
       <figure>
-        <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+        <Image src="/images/logo.png" alt="Logo" width={70} height={70} />
       </figure>
       <ul>
         <li>
@@ -26,7 +26,7 @@ const Footer = () => {
       <div>
         <span className="text-xs">&#9400;</span> Made By William Giammona
       </div>
-    </>
+    </section>
   );
 };
 
