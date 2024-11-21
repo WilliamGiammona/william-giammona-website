@@ -17,7 +17,7 @@ export default function Home() {
       <section className="py-12">
         <Projects />
       </section>
-      <section className="py-12 bg-black">
+      <section className="py-24 bg-black">
         <Footer />
       </section>
     </>
