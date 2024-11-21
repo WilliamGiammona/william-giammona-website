@@ -17,12 +17,15 @@ const Footer = () => {
           <Link href="/">LinkedIn</Link>
         </li>
         <li>
-          <Link href="/">Email</Link>
+          <Link href="/">Contact</Link>
         </li>
         <li>
           <Link href="/">Resume</Link>
         </li>
       </ul>
+      <div>
+        <span className="text-xs">&#9400;</span> Made By William Giammona
+      </div>
     </>
   );
 };
