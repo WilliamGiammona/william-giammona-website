@@ -10,18 +10,24 @@ const Nav = () => {
         <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
       </figure>
       <ul className="flex items-center">
-        <li className="mx-3">
-          <Link className="text-[#242424] font-bold" href="/">
+        <li className="mx-3 relative">
+          <Link className="text-[#242424] font-bold link-underline" href="/">
             About
           </Link>
         </li>
-        <li className="mx-3">
-          <Link className="text-[#242424] font-bold" href="/projects">
+        <li className="mx-3 relative">
+          <Link
+            className="text-[#242424] font-bold link-underline"
+            href="/projects"
+          >
             Projects
           </Link>
         </li>
-        <li className="mx-3">
-          <Link className="text-[#242424] font-bold" href="/contact">
+        <li className="mx-3 relative">
+          <Link
+            className="text-[#242424] font-bold link-underline"
+            href="/contact"
+          >
             Contact
           </Link>
         </li>

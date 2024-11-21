@@ -9,3 +9,9 @@
     @apply bg-background;
   }
 }
+
+@layer components {
+  .link-underline {
+    @apply after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-full after:bg-black after:left-0;
+  }
+}
