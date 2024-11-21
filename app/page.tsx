@@ -14,7 +14,7 @@ export default function Home() {
         <Mailbtn />
         <Scroll />
       </section>
-      <section className="py-12">
+      <section className="py-12 mb-24">
         <Projects />
       </section>
       <section className="py-24 bg-black">

@@ -9,7 +9,7 @@ const Footer = () => {
       <figure>
         <Image src="/images/logo.png" alt="Logo" width={70} height={70} />
       </figure>
-      <ul>
+      <ul className="flex w-full justify-around max-w-lg text-white my-5">
         <li>
           <Link href="/">Github</Link>
         </li>
@@ -23,7 +23,7 @@ const Footer = () => {
           <Link href="/">Resume</Link>
         </li>
       </ul>
-      <div>
+      <div className="text-white">
         <span className="text-xs">&#9400;</span> Made By William Giammona
       </div>
     </section>

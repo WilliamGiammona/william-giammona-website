@@ -13,7 +13,7 @@ const Projects = () => {
       </h1>
       <ul>
         <li>
-          <figure className="relative rounded-3xl overflow-hidden shadow-[0_80px_20px_0_rgba(0,0,0,0.45)] group">
+          <figure className="relative rounded-3xl overflow-hidden shadow-2xl group">
             <Image
               src="/images/stockphoto.png"
               alt="stockphoto"
