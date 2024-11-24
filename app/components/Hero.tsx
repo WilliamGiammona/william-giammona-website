@@ -2,6 +2,7 @@ import React from "react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import { FileText } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -45,7 +46,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="modal">
-        <div className="w-1/2 bg-background">
+        <div className="w-1/2 bg-background flex flex-col">
           <h3>Here's a bit about me.</h3>
           <h4></h4>
           <p>
@@ -55,7 +56,38 @@ const Hero = () => {
           <br />
           <p>I currently work on extremely difficult engineering problems</p>
           <div>
-            <figure></figure>
+            <figure>
+              <Image
+                src="/images/HTML.png"
+                height={32}
+                width={32}
+                alt="html logo"
+              />
+            </figure>
+            <figure>
+              <Image
+                src="/images/CSS.png"
+                height={32}
+                width={32}
+                alt="CSS logo"
+              />
+            </figure>
+            <figure>
+              <Image
+                src="/images/Typescript.png"
+                height={32}
+                width={32}
+                alt="TS logo"
+              />
+            </figure>
+            <figure>
+              <Image
+                src="/images/Next.png"
+                height={32}
+                width={32}
+                alt="Next logo"
+              />
+            </figure>
           </div>
         </div>
         <div className="w-1/2 bg-black text-white">Let's have a chat</div>
