@@ -46,7 +46,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="modal">
-        <div className="w-1/2 bg-background flex flex-col">
+        <div className="w-1/2 bg-background flex flex-col py-10 px-20">
           <h3>Here's a bit about me.</h3>
           <h4></h4>
           <p>
@@ -55,8 +55,8 @@ const Hero = () => {
           </p>
           <br />
           <p>I currently work on extremely difficult engineering problems</p>
-          <div>
-            <figure>
+          <div className="flex flex-wrap">
+            <figure className="modal__language">
               <Image
                 src="/images/HTML.png"
                 height={32}
@@ -64,7 +64,7 @@ const Hero = () => {
                 alt="html logo"
               />
             </figure>
-            <figure>
+            <figure className="modal__language">
               <Image
                 src="/images/CSS.png"
                 height={32}
@@ -72,7 +72,7 @@ const Hero = () => {
                 alt="CSS logo"
               />
             </figure>
-            <figure>
+            <figure className="modal__language">
               <Image
                 src="/images/Typescript.png"
                 height={32}
@@ -80,7 +80,7 @@ const Hero = () => {
                 alt="TS logo"
               />
             </figure>
-            <figure>
+            <figure className="modal__language">
               <Image
                 src="/images/Next.png"
                 height={32}
@@ -90,7 +90,9 @@ const Hero = () => {
             </figure>
           </div>
         </div>
-        <div className="w-1/2 bg-black text-white">Let's have a chat</div>
+        <div className="w-1/2 bg-black text-white py-10 px-20">
+          Let's have a chat
+        </div>
       </div>
     </header>
   );
