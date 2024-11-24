@@ -47,54 +47,74 @@ const Hero = () => {
       </div>
       <div className="modal">
         <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20">
-          <h3>Here's a bit about me.</h3>
-          <h4></h4>
-          <p>
-            I'm an American frontend software engineer with a strong passion for
-            developing websites with great user experiences.
+          <h3 className="text-2xl font-bold">Here's a bit about me.</h3>
+          <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
+          <p className="mb-2 leading-7">
+            I'm an American{" "}
+            <span className="text-orange">frontend software engineer</span> with
+            a strong passion for developing websites with great{" "}
+            <span className="text-orange">user experiences.</span>
+            <br />I currently work on extremely difficult engineering problems
           </p>
-          <br />
-          <p>I currently work on extremely difficult engineering problems</p>
           <div className="flex flex-wrap">
             <figure className="modal__language">
-              <Image
-                src="/images/HTML.svg.png"
-                height={64}
-                width={64}
-                alt="html logo"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"
+                  alt="html logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="language__name">HTML</span>
             </figure>
+
             <figure className="modal__language">
-              <Image
-                src="/images/CSS.svg.png"
-                height={64}
-                width={64}
-                alt="CSS logo"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                  alt="CSS logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="language__name">CSS</span>
             </figure>
+
             <figure className="modal__language">
-              <Image
-                src="/images/TS.svg.png"
-                height={64}
-                width={64}
-                alt="TS logo"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
+                  alt="TS logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="language__name">Typescript</span>
             </figure>
+
             <figure className="modal__language">
-              <Image
-                src="/images/React.svg.png"
-                height={64}
-                width={64}
-                alt="Next logo"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg"
+                  alt="React logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="language__name">React</span>
             </figure>
+
             <figure className="modal__language">
-              <Image
-                src="/images/Next.png"
-                height={64}
-                width={64}
-                alt="Next logo"
-              />
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                  alt="Next.js logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="language__name">Next.js</span>
             </figure>
           </div>
         </div>

@@ -30,6 +30,22 @@
   }
 
   .modal__language {
-    @apply w-1/4 p-4;
+    @apply w-1/4 p-4 relative flex flex-col items-center transition-all duration-300 ease-in-out;
+  }
+
+  .language__name {
+    @apply absolute -bottom-2;
+  }
+
+  .modal__language:hover {
+    @apply transform scale-90 brightness-90;
+  }
+
+  .modal__language:hover .language__name {
+    @apply transform scale-100;
+  }
+
+  .language__name {
+    @apply absolute -bottom-2 transform scale-0 transition-all duration-300 ease-in-out;
   }
 }
