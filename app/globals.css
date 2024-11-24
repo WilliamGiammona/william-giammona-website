@@ -28,4 +28,8 @@
   .modal {
     @apply flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-6xl h-[700px] shadow-2xl rounded-3xl overflow-hidden;
   }
+
+  .modal__language {
+    @apply w-1/4 p-4;
+  }
 }

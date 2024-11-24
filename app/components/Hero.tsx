@@ -46,7 +46,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="modal">
-        <div className="w-1/2 bg-background flex flex-col py-10 px-20">
+        <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20">
           <h3>Here's a bit about me.</h3>
           <h4></h4>
           <p>
@@ -58,33 +58,41 @@ const Hero = () => {
           <div className="flex flex-wrap">
             <figure className="modal__language">
               <Image
-                src="/images/HTML.png"
-                height={32}
-                width={32}
+                src="/images/HTML.svg.png"
+                height={64}
+                width={64}
                 alt="html logo"
               />
             </figure>
             <figure className="modal__language">
               <Image
-                src="/images/CSS.png"
-                height={32}
-                width={32}
+                src="/images/CSS.svg.png"
+                height={64}
+                width={64}
                 alt="CSS logo"
               />
             </figure>
             <figure className="modal__language">
               <Image
-                src="/images/Typescript.png"
-                height={32}
-                width={32}
+                src="/images/TS.svg.png"
+                height={64}
+                width={64}
                 alt="TS logo"
               />
             </figure>
             <figure className="modal__language">
               <Image
+                src="/images/React.svg.png"
+                height={64}
+                width={64}
+                alt="Next logo"
+              />
+            </figure>
+            <figure className="modal__language">
+              <Image
                 src="/images/Next.png"
-                height={32}
-                width={32}
+                height={64}
+                width={64}
                 alt="Next logo"
               />
             </figure>
