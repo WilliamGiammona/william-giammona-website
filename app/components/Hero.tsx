@@ -44,8 +44,22 @@ const Hero = () => {
           />
         </Link>
       </div>
-      <div>Here's a bit about me</div>
-      <div>Let's have a chat</div>
+      <div className="modal">
+        <div className="w-1/2 bg-background">
+          <h3>Here's a bit about me.</h3>
+          <h4></h4>
+          <p>
+            I'm an American frontend software engineer with a strong passion for
+            developing websites with great user experiences.
+          </p>
+          <br />
+          <p>I currently work on extremely difficult engineering problems</p>
+          <div>
+            <figure></figure>
+          </div>
+        </div>
+        <div className="w-1/2 bg-black text-white">Let's have a chat</div>
+      </div>
     </header>
   );
 };
