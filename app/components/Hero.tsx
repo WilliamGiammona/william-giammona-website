@@ -44,6 +44,8 @@ const Hero = () => {
           />
         </Link>
       </div>
+      <div>Here's a bit about me</div>
+      <div>Let's have a chat</div>
     </header>
   );
 };
