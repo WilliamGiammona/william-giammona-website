@@ -4,6 +4,7 @@ import { Github } from "lucide-react";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Loader } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -118,8 +119,43 @@ const Hero = () => {
             </figure>
           </div>
         </div>
-        <div className="w-1/2 bg-black text-white py-10 px-20">
-          Let's have a chat
+        <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative">
+          <h3 className="text-2xl font-bold">Let's have a chat!</h3>
+          <h4 className="mt-3 mb-6 text-sm">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form" action="">
+            <div className="mb-5">
+              <label className="text-sm font-bold ">Name</label>
+              <input className="input" name="user_name" type="text" required />
+            </div>
+            <div className="mb-5">
+              <label className="text-sm font-bold ">Email</label>
+              <input
+                className="input"
+                name="user_email"
+                type="email"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label className="text-sm font-bold ">Message</label>
+              <textarea
+                className="input resize-y h-24 mt-2"
+                name="message"
+                required
+              />
+            </div>
+            <button id="contact__submit" className="formButton">
+              Send it my way
+            </button>
+          </form>
+          <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center">
+            <Loader size={80} className="loader" />
+          </div>
+          <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center bg-success z-1">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
         </div>
       </div>
     </header>

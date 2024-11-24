@@ -10,6 +10,15 @@
   }
 }
 
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @layer components {
   .link-underline {
     @apply after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-black after:right-0 after:transition-all after:duration-300 after:ease-in-out;
@@ -47,5 +56,18 @@
 
   .language__name {
     @apply absolute -bottom-2 transform scale-0 transition-all duration-300 ease-in-out;
+  }
+
+  .input {
+    @apply w-full bg-black text-white outline-none border-[1px] border-solid border-border border-t-0 border-l-0 border-r-0 h-10 transition-all duration-300 ease-in-out focus:border-orange;
+  }
+
+  .formButton {
+    @apply bg-orange border-2 border-solid border-orange text-white text-xl py-3 px-6 font-bold max-w-60 w-full transition-all duration-300 ease-in-out hover:border-white hover:bg-transparent active:border-orange active:text-orange;
+  }
+
+  .loader {
+    animation: spinner 750ms linear infinite;
+    z-index: -1;
   }
 }

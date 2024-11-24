@@ -13,6 +13,8 @@ export default {
         background: "rgb(245,245,245)",
         orange: "rgb(240, 100, 73)",
         photobg: "rgb(28, 29, 37)",
+        border: "rgb(192,196,204)",
+        success: "rgb(75, 181, 67)",
       },
       keyframes: {
         scroll: {
