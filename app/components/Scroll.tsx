@@ -29,6 +29,7 @@ const Scroll = () => {
   ease-in-out 
   hover:scale-110
   cursor-pointer
+  active:scale-90
 "
     ></div>
   );

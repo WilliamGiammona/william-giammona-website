@@ -155,7 +155,7 @@ const Hero = () => {
             <Loader size={80} className="loader" />
           </div>
           <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center bg-success z-1 text-4xl font-bold text-center p-7">
-            <div className="absolute top-7 right-7 cursor-pointer">
+            <div className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90">
               <X size={36} />
             </div>
             Thanks for the message! Looking forward to speaking to you soon.
