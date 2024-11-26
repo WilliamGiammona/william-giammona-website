@@ -5,6 +5,7 @@ import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Loader } from "lucide-react";
+import { X } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -48,10 +49,10 @@ const Hero = () => {
       </div>
       <div className="modal">
         <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20">
-          <h3 className="text-2xl font-bold">Here's a bit about me.</h3>
+          <h3 className="text-2xl font-bold">Here&apos;s a bit about me.</h3>
           <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
           <p className="mb-2 leading-7">
-            I'm an American{" "}
+            I&apos;m an American
             <span className="text-orange">frontend software engineer</span> with
             a strong passion for developing websites with great{" "}
             <span className="text-orange">user experiences.</span>
@@ -120,9 +121,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative">
-          <h3 className="text-2xl font-bold">Let's have a chat!</h3>
+          <h3 className="text-2xl font-bold">Let&apos;s have a chat!</h3>
           <h4 className="mt-3 mb-6 text-sm">
-            I'm currently open to new opportunities.
+            I&apos;m currently open to new opportunities.
           </h4>
           <form id="contact__form" action="">
             <div className="mb-5">
@@ -153,7 +154,10 @@ const Hero = () => {
           <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center">
             <Loader size={80} className="loader" />
           </div>
-          <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center bg-success z-1">
+          <div className="absolute flex top-0 left-0 w-full h-full  justify-center items-center bg-success z-1 text-4xl font-bold text-center p-7">
+            <div className="absolute top-7 right-7 cursor-pointer">
+              <X size={36} />
+            </div>
             Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
