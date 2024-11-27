@@ -77,13 +77,13 @@ const Modal = () => {
   return (
     <div>
       <Mail
-        className="text-black rounded-lg cursor-pointer absolute bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110"
-        size={70}
+        className="text-white rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110  active:scale-90 z-[9999] bg-black px-3"
+        size={72}
         onClick={handleMailClick}
       />
 
       {isFormVisible && (
-        <div className="modal absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl">
+        <div className="modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999]">
           <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20">
             <h3 className="text-2xl font-bold">Here&apos;s a bit about me.</h3>
             <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
