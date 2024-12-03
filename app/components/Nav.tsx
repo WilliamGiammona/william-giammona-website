@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Contrast } from "lucide-react";
+import { useModal } from "./ModalContext";
 
 const Nav = () => {
+  const { setIsFormVisible } = useModal();
   return (
     <nav className="font-sans flex justify-between w-full max-w-6xl mx-auto h-24 items-center px-5">
       <figure>
@@ -25,6 +27,7 @@ const Nav = () => {
         </li>
         <li className="mx-3 relative">
           <Link
+            onClick={() => setIsFormVisible(true)}
             className="text-[#242424] font-bold link-underline"
             href="/contact"
           >
