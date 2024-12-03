@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,7 +31,7 @@ const Nav = () => {
           <Link
             onClick={() => setIsFormVisible(true)}
             className="text-[#242424] font-bold link-underline"
-            href="/contact"
+            href="#"
           >
             Contact
           </Link>

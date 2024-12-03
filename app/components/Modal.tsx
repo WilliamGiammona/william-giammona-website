@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { Mail, X, Loader } from "lucide-react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
+import { useModal } from "./ModalContext";
 
 const Modal = () => {
-  const [isFormVisible, setIsFormVisible] = useState(false);
+  const { isFormVisible, setIsFormVisible } = useModal();
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -66,20 +67,12 @@ const Modal = () => {
     });
   };
 
-  const handleFormClose = () => {
-    setIsFormVisible(false);
-  };
-
-  const handleMailClick = () => {
-    setIsFormVisible(true);
-  };
-
   return (
     <div>
       <Mail
-        className="text-white rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110  active:scale-90 z-[9999] bg-black px-3"
+        className="text-white rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-black px-3"
         size={72}
-        onClick={handleMailClick}
+        onClick={() => setIsFormVisible(true)}
       />
 
       {isFormVisible && (
@@ -159,7 +152,7 @@ const Modal = () => {
           <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative slide-in-right">
             <div
               className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
-              onClick={handleFormClose}
+              onClick={() => setIsFormVisible(false)}
             >
               <X size={36} />
             </div>
