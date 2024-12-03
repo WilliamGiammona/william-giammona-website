@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import { FileText } from "lucide-react";
 import Link from "next/link";
+import { useModal } from "./ModalContext";
 
 const Hero = () => {
+  const { setIsFormVisible } = useModal();
   return (
     <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl px-8">
       <h1 className="text-8xl mb-3 text-left">Hey</h1>
@@ -14,7 +18,13 @@ const Hero = () => {
         with a strong passion for building web applications with great user
         experiences.
         <br />
-        Here&apos;s a bit more <b className="text-orange">about me.</b>
+        Here&apos;s a bit more{" "}
+        <button
+          onClick={() => setIsFormVisible(true)}
+          className="text-orange font-bold"
+        >
+          about me.
+        </button>
       </p>
       <div className="flex mt-4 gap-3">
         <Link
