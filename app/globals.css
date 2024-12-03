@@ -154,7 +154,7 @@
   }
 
   .language__name {
-    @apply absolute -bottom-2 text-foreground;
+    @apply absolute -bottom-2 text-foreground opacity-0 scale-0 transform transition-all duration-300 ease-in-out;
   }
 
   .modal__language:hover {
@@ -162,7 +162,7 @@
   }
 
   .modal__language:hover .language__name {
-    @apply transform scale-100;
+    @apply transform scale-100 opacity-100;
   }
 
   .input {
