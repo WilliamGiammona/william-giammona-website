@@ -28,7 +28,7 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
-    --orange: 24 96% 53%;
+    --orange: 11 84% 61%;
     --orange-foreground: 0 0% 100%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -36,9 +36,10 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --mail-button-bg: 0 0% 14%;
   }
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 14%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -57,13 +58,14 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
-    --orange: 24 96% 53%;
+    --orange: 11 84% 61%;
     --orange-foreground: 0 0% 100%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --mail-button-bg: 0 0% 98%;
   }
 }
 

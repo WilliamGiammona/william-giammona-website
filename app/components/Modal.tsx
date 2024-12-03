@@ -74,7 +74,7 @@ const Modal = () => {
   return (
     <div>
       <Mail
-        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-primary px-3"
+        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-mailButtonBg px-3"
         size={72}
         onClick={handleMailClick}
       />

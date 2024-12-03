@@ -19,6 +19,7 @@ export default {
         border: "hsl(var(--border))",
         success: "rgb(75, 181, 67)",
         foreground: "hsl(var(--foreground))",
+        mailButtonBg: "hsl(var(--mail-button-bg))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
