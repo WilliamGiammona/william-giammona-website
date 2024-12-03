@@ -9,6 +9,7 @@ import { useModal } from "./ModalContext";
 const Modal = () => {
   const { isFormVisible, setIsFormVisible } = useModal();
   const [isLoading, setIsLoading] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const [formData, setFormData] = useState({
@@ -29,6 +30,11 @@ const Modal = () => {
       ...prev,
       [name]: value,
     }));
+  };
+
+  const handleMailClick = () => {
+    setIsClosing(false);
+    setIsFormVisible(true);
   };
 
   const contact = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -58,13 +64,11 @@ const Modal = () => {
   };
 
   const handleClose = () => {
-    setIsSuccess(false);
-    setIsError(false);
-    setFormData({
-      user_name: "",
-      user_email: "",
-      message: "",
-    });
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsFormVisible(false);
+      setIsClosing(false);
+    }, 500);
   };
 
   return (
@@ -72,12 +76,20 @@ const Modal = () => {
       <Mail
         className="text-white rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-black px-3"
         size={72}
-        onClick={() => setIsFormVisible(true)}
+        onClick={handleMailClick}
       />
 
       {isFormVisible && (
-        <div className="modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999] flex">
-          <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20 slide-in-left">
+        <div
+          className={`modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999] flex ${
+            isClosing ? "closing" : ""
+          }`}
+        >
+          <div
+            className={`w-1/2 bg-background flex flex-col justify-center py-10 px-20 ${
+              isClosing ? "slide-out-left" : "slide-in-left"
+            }`}
+          >
             <h3 className="text-2xl font-bold">Here&apos;s a bit about me.</h3>
             <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
             <p className="mb-2 leading-7">
@@ -149,10 +161,14 @@ const Modal = () => {
               </figure>
             </div>
           </div>
-          <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative slide-in-right">
+          <div
+            className={`w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative ${
+              isClosing ? "slide-out-right" : "slide-in-right"
+            }`}
+          >
             <div
               className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
-              onClick={() => setIsFormVisible(false)}
+              onClick={handleClose}
             >
               <X size={36} />
             </div>

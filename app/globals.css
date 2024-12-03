@@ -46,20 +46,20 @@
   }
 }
 
-.slide-out-left {
-  animation: slideOutLeft 0.5s ease-out;
-}
-
-.slide-out-right {
-  animation: slideOutRight 0.5s ease-out;
-}
-
 .slide-in-left {
   animation: slideInLeft 0.5s ease-out;
 }
 
 .slide-in-right {
   animation: slideInRight 0.5s ease-out;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease-out;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.5s ease-out;
 }
 
 @keyframes spinner {
