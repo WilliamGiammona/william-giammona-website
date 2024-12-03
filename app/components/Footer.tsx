@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { Github } from "lucide-react";
+import { useModal } from "./ModalContext";
 
 const Footer = () => {
+  const { setIsFormVisible } = useModal();
+
   return (
     <section className="flex flex-col items-center">
       <figure>
@@ -12,7 +16,7 @@ const Footer = () => {
           alt="Logo"
           width={70}
           height={70}
-          className="dark:invert" // Add invert in dark mode if your logo is dark
+          className="dark:invert"
         />
       </figure>
       <ul className="flex w-full justify-around max-w-lg text-primary my-5">
@@ -27,7 +31,14 @@ const Footer = () => {
           </Link>
         </li>
         <li className="relative">
-          <Link className="link-footer relative" href="/">
+          <Link
+            className="link-footer relative"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsFormVisible(true);
+            }}
+          >
             Contact
           </Link>
         </li>
