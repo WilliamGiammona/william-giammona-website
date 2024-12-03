@@ -8,16 +8,16 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen">
+      <section className="min-h-screen bg-background relative">
         <Nav />
         <Hero />
         <Modal />
         <Scroll />
       </section>
-      <section className="py-12 mb-24">
+      <section className="py-12 mb-24 bg-background">
         <Projects />
       </section>
-      <section className="py-24 bg-black">
+      <section className="py-24 bg-background dark:bg-black">
         <Footer />
       </section>
     </>

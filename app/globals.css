@@ -28,6 +28,8 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
+    --orange: 24 96% 53%;
+    --orange-foreground: 0 0% 100%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -55,6 +57,8 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+    --orange: 24 96% 53%;
+    --orange-foreground: 0 0% 100%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -63,6 +67,7 @@
   }
 }
 
+/* Animations remain the same */
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -99,22 +104,6 @@
   }
 }
 
-.slide-in-left {
-  animation: slideInLeft 0.5s ease-out;
-}
-
-.slide-in-right {
-  animation: slideInRight 0.5s ease-out;
-}
-
-.slide-out-left {
-  animation: slideOutLeft 0.5s ease-out;
-}
-
-.slide-out-right {
-  animation: slideOutRight 0.5s ease-out;
-}
-
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -124,24 +113,33 @@
   }
 }
 
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease-out;
+}
+.slide-out-right {
+  animation: slideOutRight 0.5s ease-out;
+}
+
 @layer components {
-  .link-underline {
-    @apply after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-black after:right-0 after:transition-all after:duration-300 after:ease-in-out;
+  .scroll {
+    @apply cursor-pointer after:content-[''] after:absolute after:h-1 after:w-1 after:bg-foreground after:rounded-sm after:animate-scroll transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 w-5 h-8 border-2 border-solid border-foreground rounded-3xl flex items-center justify-center absolute bottom-5 left-1/2 -translate-x-1/2;
   }
-  .link-underline:hover {
-    @apply after:w-full after:left-0;
+  .link-underline {
+    @apply after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-foreground after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0;
   }
 
   .about-underline {
     @apply after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-orange after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0;
   }
 
-  .about-underline:hover {
-    @apply after:w-full after:left-0;
-  }
-
   .link-footer {
-    @apply cursor-pointer after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-white after:right-0 after:transition-all after:duration-300 after:ease-in-out;
+    @apply cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:h-1 after:w-0 after:bg-primary after:right-0 after:transition-all after:duration-300 after:ease-in-out;
   }
   .link-footer:hover {
     @apply after:w-full after:left-0;
@@ -156,7 +154,7 @@
   }
 
   .language__name {
-    @apply absolute -bottom-2;
+    @apply absolute -bottom-2 text-foreground;
   }
 
   .modal__language:hover {
@@ -167,16 +165,12 @@
     @apply transform scale-100;
   }
 
-  .language__name {
-    @apply absolute -bottom-2 transform scale-0 transition-all duration-300 ease-in-out;
-  }
-
   .input {
-    @apply w-full bg-black text-white outline-none border-[1px] border-solid border-border border-t-0 border-l-0 border-r-0 h-10 transition-all duration-300 ease-in-out focus:border-orange;
+    @apply w-full bg-transparent text-foreground outline-none border-[1px] border-solid border-border border-t-0 border-l-0 border-r-0 h-10 transition-all duration-300 ease-in-out focus:border-orange;
   }
 
   .formButton {
-    @apply bg-orange border-2 border-solid border-orange text-white text-xl py-3 px-6 font-bold max-w-60 w-full transition-all duration-300 ease-in-out hover:border-white hover:bg-transparent active:border-orange active:text-orange;
+    @apply bg-orange border-2 border-solid border-orange text-orangeForeground text-xl py-3 px-6 font-bold max-w-60 w-full transition-all duration-300 ease-in-out hover:border-primary-foreground hover:bg-transparent hover:text-primary-foreground active:border-orange active:text-orange;
   }
 
   .loader {

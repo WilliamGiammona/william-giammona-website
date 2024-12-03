@@ -74,21 +74,21 @@ const Modal = () => {
   return (
     <div>
       <Mail
-        className="text-white rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-black px-3"
+        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-primary px-3"
         size={72}
         onClick={handleMailClick}
       />
 
       {isFormVisible && (
         <>
-          <div className="fixed inset-0 backdrop-blur-sm bg-black/50 z-[9998]" />
+          <div className="fixed inset-0 backdrop-blur-sm bg-foreground/50 z-[9998]" />
           <div
             className={`modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999] flex ${
               isClosing ? "closing" : ""
             }`}
           >
             <div
-              className={`w-1/2 bg-background flex flex-col justify-center py-10 px-20 ${
+              className={`w-1/2 bg-background text-foreground flex flex-col justify-center py-10 px-20 ${
                 isClosing ? "slide-out-left" : "slide-in-left"
               }`}
             >
@@ -159,7 +159,7 @@ const Modal = () => {
                       src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
                       alt="Next.js logo"
                       fill
-                      className="object-contain"
+                      className="object-contain dark:invert"
                     />
                   </div>
                   <span className="language__name">Next.js</span>
@@ -167,7 +167,7 @@ const Modal = () => {
               </div>
             </div>
             <div
-              className={`w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative ${
+              className={`w-1/2 bg-primary text-primary-foreground py-10 px-20 flex flex-col justify-center relative ${
                 isClosing ? "slide-out-right" : "slide-in-right"
               }`}
             >
@@ -185,7 +185,7 @@ const Modal = () => {
                 <div className="mb-5">
                   <label className="text-sm font-bold">Name</label>
                   <input
-                    className="input"
+                    className="input bg-transparent"
                     name="user_name"
                     type="text"
                     required
@@ -196,7 +196,7 @@ const Modal = () => {
                 <div className="mb-5">
                   <label className="text-sm font-bold">Email</label>
                   <input
-                    className="input"
+                    className="input bg-transparent"
                     name="user_email"
                     type="email"
                     required
@@ -207,7 +207,7 @@ const Modal = () => {
                 <div className="mb-5">
                   <label className="text-sm font-bold">Message</label>
                   <textarea
-                    className="input resize-y h-24 mt-2"
+                    className="input bg-transparent resize-y h-24 mt-2"
                     name="message"
                     required
                     value={formData.message}
@@ -225,14 +225,14 @@ const Modal = () => {
 
               {/* Loading Spinner */}
               {isLoading && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-black bg-opacity-50">
+                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-primary/50">
                   <Loader size={80} className="loader" />
                 </div>
               )}
 
               {/* Success Message */}
               {isSuccess && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-success text-4xl font-bold text-center p-7">
+                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-emerald-600 text-white text-4xl font-bold text-center p-7">
                   <div
                     className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
                     onClick={handleClose}
@@ -246,7 +246,7 @@ const Modal = () => {
 
               {/* Error Message */}
               {isError && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-red-600 text-2xl font-bold text-center p-7">
+                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-destructive text-destructive-foreground text-2xl font-bold text-center p-7">
                   <div
                     className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
                     onClick={handleClose}

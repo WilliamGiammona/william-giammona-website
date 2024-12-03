@@ -6,7 +6,7 @@ import { Github, Link2 } from "lucide-react";
 const Projects = () => {
   return (
     <div className="w-full max-w-6xl mx-auto px-3">
-      <h1 className="text-center text-5xl mb-16">
+      <h1 className="text-center text-5xl mb-16 text-foreground">
         <b>
           Here are some of my <span className="text-orange">projects</span>
         </b>
@@ -28,7 +28,8 @@ const Projects = () => {
                 left-0 
                 w-full 
                 h-full 
-              bg-photobg 
+                bg-primary/80
+                dark:bg-primary/90 
                 opacity-0 
                 group-hover:opacity-70 
                 transition-opacity 
@@ -41,7 +42,7 @@ const Projects = () => {
                     absolute 
                     top-1/2 
                     left-24 
-                  text-white 
+                    text-primary-foreground
                     text-center 
                     max-w-xl 
                     translate-y-full 
@@ -64,10 +65,16 @@ const Projects = () => {
                   Hic ipsum libero commodi ipsa.
                 </p>
                 <div className="flex gap-4 justify-start">
-                  <Link className="text-white" href="/projects">
+                  <Link
+                    className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
+                    href="/projects"
+                  >
                     <Github size={20} />
                   </Link>
-                  <Link className="text-white" href="/projects">
+                  <Link
+                    className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
+                    href="/projects"
+                  >
                     <Link2 size={20} />
                   </Link>
                 </div>
