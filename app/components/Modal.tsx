@@ -83,8 +83,8 @@ const Modal = () => {
       />
 
       {isFormVisible && (
-        <div className="modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999]">
-          <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20">
+        <div className="modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999] flex">
+          <div className="w-1/2 bg-background flex flex-col justify-center py-10 px-20 slide-in-left">
             <h3 className="text-2xl font-bold">Here&apos;s a bit about me.</h3>
             <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
             <p className="mb-2 leading-7">
@@ -156,7 +156,7 @@ const Modal = () => {
               </figure>
             </div>
           </div>
-          <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative">
+          <div className="w-1/2 bg-black text-white py-10 px-20 flex flex-col justify-center relative slide-in-right">
             <div
               className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
               onClick={handleFormClose}
