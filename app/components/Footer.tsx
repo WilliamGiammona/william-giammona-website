@@ -21,12 +21,22 @@ const Footer = () => {
       </figure>
       <ul className="flex w-full justify-around max-w-lg text-primary my-5">
         <li className="relative">
-          <Link className="link-footer relative" href="/">
+          <Link
+            className="link-footer relative"
+            href="https://github.com/WilliamGiammona"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
           </Link>
         </li>
         <li className="relative">
-          <Link className="link-footer relative" href="/">
+          <Link
+            className="link-footer relative"
+            href="https://www.linkedin.com/in/william-giammona-933376339/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </Link>
         </li>
@@ -43,7 +53,12 @@ const Footer = () => {
           </Link>
         </li>
         <li className="relative">
-          <Link className="link-footer relative" href="/">
+          <Link
+            className="link-footer relative"
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </Link>
         </li>
