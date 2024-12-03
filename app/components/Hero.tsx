@@ -21,9 +21,9 @@ const Hero = () => {
         Here&apos;s a bit more{" "}
         <button
           onClick={() => setIsFormVisible(true)}
-          className="text-orange font-bold"
+          className="text-orange relative"
         >
-          about me.
+          <span className="link-underline">about me.</span>
         </button>
       </p>
       <div className="flex mt-4 gap-3">
