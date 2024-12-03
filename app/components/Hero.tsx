@@ -23,7 +23,7 @@ const Hero = () => {
           onClick={() => setIsFormVisible(true)}
           className="text-orange relative"
         >
-          <span className="link-underline">about me.</span>
+          <span className="about-underline">about me.</span>
         </button>
       </p>
       <div className="flex mt-4 gap-3">
