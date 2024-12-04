@@ -74,16 +74,16 @@ const Modal = () => {
   return (
     <div>
       <Mail
-        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-[9999] bg-mailButtonBg px-3"
+        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-20 bg-mailButtonBg px-3"
         size={72}
         onClick={handleMailClick}
       />
 
       {isFormVisible && (
         <>
-          <div className="fixed inset-0 backdrop-blur-sm bg-foreground/50 z-[9998]" />
+          <div className="fixed inset-0 backdrop-blur-sm bg-foreground/50 z-30" />
           <div
-            className={`modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-[9999] flex ${
+            className={`modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-40 flex ${
               isClosing ? "closing" : ""
             }`}
           >
