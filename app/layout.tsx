@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ModalProvider } from "./components/ModalContext";
-import { ThemeProvider } from "./components/theme-provider";
+import { ModalProvider } from "@/app/components/ModalContext";
+import { ThemeProvider } from "@/app/components/theme-provider";
+import BackgroundShapes from "@/app/components/BackgroundShapes";
 
 export const metadata: Metadata = {
   title: "William Giammona",
@@ -22,7 +23,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ModalProvider>{children}</ModalProvider>
+          <ModalProvider>
+            <BackgroundShapes />
+            {children}
+          </ModalProvider>
         </ThemeProvider>
       </body>
     </html>

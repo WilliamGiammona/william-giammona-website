@@ -67,9 +67,20 @@ export default {
             transform: "translateY(-3px)",
           },
         },
+        spinSlow: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         scroll: "scroll 1s infinite alternate-reverse",
+        spinSlow: "spinSlow 2s linear infinite",
+        spinSlower: "spinSlow 2s linear infinite",
+        spinSlowest: "spinSlow 2s linear infinite",
       },
       scale: {
         "108": "1.08",
