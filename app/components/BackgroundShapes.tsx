@@ -23,7 +23,7 @@ const BackgroundShapes = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-50">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-[1]">
       {/* Top Row */}
       <div
         className="absolute top-32 left-32 transition-transform duration-300 ease-out"

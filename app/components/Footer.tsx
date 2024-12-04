@@ -9,7 +9,7 @@ const Footer = () => {
   const { setIsFormVisible } = useModal();
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="relative flex flex-col items-center z-10">
       <figure>
         <Image
           src="/images/logo.png"

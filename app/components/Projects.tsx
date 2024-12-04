@@ -5,7 +5,7 @@ import { Github, Link2 } from "lucide-react";
 
 const Projects = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto px-3">
+    <div className="relative w-full max-w-6xl mx-auto px-3 z-10">
       <h1 className="text-center text-5xl mb-16 text-foreground">
         <b>
           Here are some of my <span className="text-orange">projects</span>

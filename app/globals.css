@@ -130,7 +130,7 @@
 
 @layer components {
   .scroll {
-    @apply cursor-pointer after:content-[''] after:absolute after:h-1 after:w-1 after:bg-foreground after:rounded-sm after:animate-scroll transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 w-5 h-8 border-2 border-solid border-foreground rounded-3xl flex items-center justify-center fixed bottom-8 left-1/2 -translate-x-1/2;
+    @apply cursor-pointer after:content-[''] after:absolute after:h-1 after:w-1 after:bg-foreground after:rounded-sm after:animate-scroll transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 w-5 h-8 border-2 border-solid border-foreground rounded-3xl flex items-center justify-center fixed bottom-8 left-1/2 -translate-x-1/2 z-50;
   }
 
   .link-underline {

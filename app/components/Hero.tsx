@@ -9,7 +9,7 @@ const Hero = () => {
   const { setIsFormVisible } = useModal();
 
   return (
-    <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl px-8">
+    <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl px-8 z-10">
       <h1 className="text-8xl mb-3 text-left text-foreground">Hey</h1>
       <h1 className="text-orange text-8xl mb-3 text-left">I&apos;m William.</h1>
       <p className="text-xl max-w-96 leading-[2] text-foreground">
