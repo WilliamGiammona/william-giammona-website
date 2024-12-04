@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+const SCALE_FACTOR = 1 / 20;
+
 const BackgroundShapes = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const scaleFactor = 1 / 20;
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
-      const x = event.clientX * scaleFactor;
-      const y = event.clientY * scaleFactor;
+      const x = event.clientX * SCALE_FACTOR;
+      const y = event.clientY * SCALE_FACTOR;
       setMousePosition({ x, y });
     };
 
