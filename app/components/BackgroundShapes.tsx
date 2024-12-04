@@ -36,7 +36,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
 
@@ -51,7 +50,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={15}
           height={15}
-          className="dark:invert"
         />
       </div>
 
@@ -66,7 +64,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
 
@@ -78,11 +75,10 @@ const BackgroundShapes = () => {
         }}
       >
         <Image
-          src="/images/backgroundImages/circle.svg"
+          src="/images/backgroundImages/semi-circle.svg"
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
 
@@ -97,7 +93,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={15}
           height={15}
-          className="dark:invert"
         />
       </div>
 
@@ -112,7 +107,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
 
@@ -128,7 +122,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={15}
           height={15}
-          className="dark:invert"
         />
       </div>
 
@@ -143,7 +136,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
 
@@ -158,7 +150,6 @@ const BackgroundShapes = () => {
           alt="background shape"
           width={18}
           height={18}
-          className="dark:invert"
         />
       </div>
     </div>
