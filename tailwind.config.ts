@@ -75,12 +75,57 @@ export default {
             transform: "rotate(360deg)",
           },
         },
+        float1: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(10px, 10px)" },
+        },
+        float2: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(-10px, 10px)" },
+        },
+        float3: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(10px, -10px)" },
+        },
+        float4: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(-10px, -10px)" },
+        },
+        float5: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(15px, 5px)" },
+        },
+        float6: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(-5px, 15px)" },
+        },
+        float7: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(5px, -15px)" },
+        },
+        float8: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(-15px, -5px)" },
+        },
+        float9: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(8px, 8px)" },
+        },
       },
       animation: {
         scroll: "scroll 1s infinite alternate-reverse",
         spinSlow: "spinSlow 2s linear infinite",
         spinSlower: "spinSlow 2s linear infinite",
         spinSlowest: "spinSlow 2s linear infinite",
+        float1: "float1 4s ease-in-out infinite",
+        float2: "float2 4s ease-in-out infinite",
+        float3: "float3 4s ease-in-out infinite",
+        float4: "float4 4s ease-in-out infinite",
+        float5: "float5 5s ease-in-out infinite",
+        float6: "float6 5s ease-in-out infinite",
+        float7: "float7 5s ease-in-out infinite",
+        float8: "float8 5s ease-in-out infinite",
+        float9: "float9 5s ease-in-out infinite",
       },
       scale: {
         "108": "1.08",
