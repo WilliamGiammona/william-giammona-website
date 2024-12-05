@@ -10,9 +10,13 @@ const Hero = () => {
 
   return (
     <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl px-8 z-10">
-      <h1 className="text-8xl mb-3 text-left text-foreground">Hey</h1>
-      <h1 className="text-orange text-8xl mb-3 text-left">I&apos;m William.</h1>
-      <p className="text-xl max-w-96 leading-[2] text-foreground">
+      <h1 className="text-5xl md:text-8xl mb-2 md:mb-3 text-left text-foreground">
+        Hey
+      </h1>
+      <h1 className="text-orange text-5xl md:text-8xl mb-2 md:mb-3 text-left">
+        I&apos;m William.
+      </h1>
+      <p className="text-xl max-w-96 leading-[1.5] md:leading-[2] text-foreground">
         I&apos;m a <b className="text-orange">Frontend Software Engineer </b>
         with a strong passion for building web applications with great user
         experiences.
