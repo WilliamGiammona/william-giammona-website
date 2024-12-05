@@ -250,29 +250,45 @@ const Modal = () => {
 
                   {/* Success Message */}
                   {isSuccess && (
-                    <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-emerald-600 text-white text-4xl font-bold text-center p-7">
+                    <div className="absolute flex flex-col top-0 left-0 w-full h-full justify-center items-center bg-emerald-600 text-white font-bold text-center p-4 md:p-7">
                       <div
-                        className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
+                        className="absolute top-4 right-4 md:top-7 md:right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
                         onClick={handleClose}
                       >
-                        <X size={36} />
+                        <X size={24} className="md:hidden" />
+                        <X size={36} className="hidden md:block" />
                       </div>
-                      Thanks for the message! Looking forward to speaking to you
-                      soon.
+                      <p className="mb-2 text-lg md:text-2xl">
+                        Thanks for the message!
+                      </p>
+                      <p className="text-base md:text-xl">
+                        Looking forward to speaking to you soon.
+                      </p>
                     </div>
                   )}
 
                   {/* Error Message */}
                   {isError && (
-                    <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-destructive text-destructive-foreground text-2xl font-bold text-center p-7">
+                    <div className="absolute flex flex-col top-0 left-0 w-full h-full justify-center items-center bg-destructive text-destructive-foreground font-bold text-center p-4 md:p-7">
                       <div
-                        className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
+                        className="absolute top-4 right-4 md:top-7 md:right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
                         onClick={handleClose}
                       >
-                        <X size={36} />
+                        <X size={24} className="md:hidden" />
+                        <X size={36} className="hidden md:block" />
                       </div>
-                      The email service is temporarily unavailable. Please
-                      contact me directly at williamgiammona94@gmail.com
+                      <p className="mb-2 text-lg md:text-2xl">
+                        The email service is temporarily unavailable.
+                      </p>
+                      <p className="text-base md:text-xl">
+                        Please contact me directly at:
+                      </p>
+                      <a
+                        href="mailto:williamgiammona94@gmail.com"
+                        className="mt-2 text-base md:text-xl underline"
+                      >
+                        williamgiammona94@gmail.com
+                      </a>
                     </div>
                   )}
                 </div>
