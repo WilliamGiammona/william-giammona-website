@@ -1,5 +1,5 @@
+// BackgroundShapes.tsx
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -11,12 +11,11 @@ const BackgroundShapes = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsXlScreen(window.innerWidth >= 1280); // xl breakpoint
+      setIsXlScreen(window.innerWidth >= 1280);
     };
 
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
@@ -34,12 +33,10 @@ const BackgroundShapes = () => {
   }, [isXlScreen]);
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-[1] hidden md:block">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-[1] hidden xl:block">
       {/* Top Row */}
       <div
-        className={`absolute top-32 left-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float1"
-        }`}
+        className={`absolute top-32 left-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -57,9 +54,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute top-32 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float2"
-        }`}
+        className={`absolute top-32 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -79,9 +74,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute top-32 right-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float3"
-        }`}
+        className={`absolute top-32 right-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -102,9 +95,7 @@ const BackgroundShapes = () => {
 
       {/* Middle Row */}
       <div
-        className={`absolute top-1/2 -translate-y-1/2 left-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float4"
-        }`}
+        className={`absolute top-1/2 -translate-y-1/2 left-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -124,9 +115,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float5"
-        }`}
+        className={`absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -146,9 +135,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute top-1/2 -translate-y-1/2 right-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float6"
-        }`}
+        className={`absolute top-1/2 -translate-y-1/2 right-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -167,9 +154,7 @@ const BackgroundShapes = () => {
 
       {/* Bottom Row */}
       <div
-        className={`absolute bottom-32 left-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float7"
-        }`}
+        className={`absolute bottom-32 left-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -189,9 +174,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute bottom-32 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float8"
-        }`}
+        className={`absolute bottom-32 left-1/2 -translate-x-1/2 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
@@ -211,9 +194,7 @@ const BackgroundShapes = () => {
       </div>
 
       <div
-        className={`absolute bottom-32 right-32 transition-transform duration-300 ease-out ${
-          !isXlScreen && "animate-float9"
-        }`}
+        className={`absolute bottom-32 right-32 transition-transform duration-300 ease-out`}
         style={
           isXlScreen
             ? {
