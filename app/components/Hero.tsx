@@ -16,7 +16,7 @@ const Hero = () => {
       <h1 className="text-orange text-5xl md:text-8xl mb-2 md:mb-3 text-left">
         I&apos;m William.
       </h1>
-      <p className="text-xl max-w-96 leading-[1.5] md:leading-[2] text-foreground">
+      <p className="text-xl max-w-96 leading-[1.8] md:leading-[2] text-foreground">
         I&apos;m a <b className="text-orange">Frontend Software Engineer </b>
         with a strong passion for building web applications with great user
         experiences.

@@ -85,24 +85,40 @@ const Modal = () => {
             <div className="flex min-h-full items-center justify-center p-4">
               <div className={`modal ${isClosing ? "closing" : ""}`}>
                 <div
-                  className={`w-full md:w-1/2 bg-background text-foreground flex flex-col justify-center py-6 md:py-10 px-6 md:px-20 min-h-[400px] ${
+                  className={`w-full md:w-1/2 bg-background text-foreground flex flex-col justify-center py-6 md:py-10 px-6 md:px-20 min-h-[400px] relative ${
                     isClosing ? "slide-out-left" : "slide-in-left"
                   }`}
                 >
-                  <h3 className="text-2xl font-bold">
+                  {/* Close button for mobile */}
+                  <div
+                    className="absolute top-4 right-4 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 md:hidden text-foreground"
+                    onClick={handleClose}
+                  >
+                    <X size={24} />
+                  </div>
+
+                  <h3 className="text-xl md:text-2xl font-bold">
                     Here&apos;s a bit about me.
                   </h3>
-                  <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
-                  <p className="mb-2 leading-7">
+                  <h4 className="mt-2 md:mt-3 mb-4 md:mb-6 text-base md:text-lg">
+                    Frontend Software Engineer
+                  </h4>
+                  <p className="mb-2 leading-7 text-base md:text-lg">
                     I&apos;m an American{" "}
-                    <span className="text-orange">
+                    <span className="text-orange font-bold">
                       frontend software engineer
                     </span>{" "}
                     with a strong passion for developing websites with great{" "}
-                    <span className="text-orange">user experiences.</span>
-                    <br />I currently work on extremely difficult engineering
-                    problems
+                    <span className="text-orange font-bold">
+                      user experiences.
+                    </span>
+                    <br className="hidden md:block" />
+                    <span className="block mt-2 md:mt-0 md:inline">
+                      I currently work on extremely difficult engineering
+                      problems
+                    </span>
                   </p>
+
                   <div className="flex flex-wrap">
                     <figure className="modal__language">
                       <div className="relative w-full aspect-square">
@@ -170,8 +186,9 @@ const Modal = () => {
                     isClosing ? "slide-out-right" : "slide-in-right"
                   }`}
                 >
+                  {/* Close button for desktop */}
                   <div
-                    className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
+                    className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 hidden md:block"
                     onClick={handleClose}
                   >
                     <X size={36} />
