@@ -149,7 +149,7 @@
   }
 
   .modal {
-    @apply flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-6xl h-[700px] shadow-2xl rounded-3xl overflow-hidden;
+    @apply flex flex-col md:flex-row w-[95%] md:w-full max-w-6xl mx-auto my-8 min-h-[700px] shadow-2xl rounded-3xl overflow-hidden;
   }
 
   .modal__language {

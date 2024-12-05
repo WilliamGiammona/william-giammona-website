@@ -74,188 +74,192 @@ const Modal = () => {
   return (
     <div>
       <Mail
-        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-8 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-20 bg-mailButtonBg px-3 w-[48px] h-[48px] md:w-[72px] md:h-[72px]"
+        className="text-primary-foreground rounded-full cursor-pointer fixed bottom-6 right-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-90 z-20 bg-mailButtonBg px-3 w-[48px] h-[48px] md:w-[72px] md:h-[72px]"
         onClick={handleMailClick}
       />
 
       {isFormVisible && (
         <>
           <div className="fixed inset-0 backdrop-blur-sm bg-foreground/50 z-30" />
-          <div
-            className={`modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold w-full max-w-5xl z-40 flex ${
-              isClosing ? "closing" : ""
-            }`}
-          >
-            <div
-              className={`w-1/2 bg-background text-foreground flex flex-col justify-center py-10 px-20 ${
-                isClosing ? "slide-out-left" : "slide-in-left"
-              }`}
-            >
-              <h3 className="text-2xl font-bold">
-                Here&apos;s a bit about me.
-              </h3>
-              <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
-              <p className="mb-2 leading-7">
-                I&apos;m an American{" "}
-                <span className="text-orange">frontend software engineer</span>{" "}
-                with a strong passion for developing websites with great{" "}
-                <span className="text-orange">user experiences.</span>
-                <br />I currently work on extremely difficult engineering
-                problems
-              </p>
-              <div className="flex flex-wrap">
-                <figure className="modal__language">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"
-                      alt="html logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className="language__name">HTML</span>
-                </figure>
-
-                <figure className="modal__language">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-                      alt="CSS logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className="language__name">CSS</span>
-                </figure>
-
-                <figure className="modal__language">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
-                      alt="TS logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className="language__name">TypeScript</span>
-                </figure>
-
-                <figure className="modal__language">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg"
-                      alt="React logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className="language__name">React</span>
-                </figure>
-
-                <figure className="modal__language">
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                      alt="Next.js logo"
-                      fill
-                      className="object-contain dark:invert"
-                    />
-                  </div>
-                  <span className="language__name">Next.js</span>
-                </figure>
-              </div>
-            </div>
-            <div
-              className={`w-1/2 bg-primary text-primary-foreground py-10 px-20 flex flex-col justify-center relative ${
-                isClosing ? "slide-out-right" : "slide-in-right"
-              }`}
-            >
-              <div
-                className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
-                onClick={handleClose}
-              >
-                <X size={36} />
-              </div>
-              <h3 className="text-2xl font-bold">Let&apos;s have a chat!</h3>
-              <h4 className="mt-3 mb-6 text-sm">
-                I&apos;m currently open to new opportunities.
-              </h4>
-              <form id="contact__form" onSubmit={contact}>
-                <div className="mb-5">
-                  <label className="text-sm font-bold">Name</label>
-                  <input
-                    className="input bg-transparent"
-                    name="user_name"
-                    type="text"
-                    required
-                    value={formData.user_name}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="mb-5">
-                  <label className="text-sm font-bold">Email</label>
-                  <input
-                    className="input bg-transparent"
-                    name="user_email"
-                    type="email"
-                    required
-                    value={formData.user_email}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="mb-5">
-                  <label className="text-sm font-bold">Message</label>
-                  <textarea
-                    className="input bg-transparent resize-y h-24 mt-2"
-                    name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <button
-                  id="contact__submit"
-                  className="formButton"
-                  type="submit"
+          <div className="fixed inset-0 z-40 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4">
+              <div className={`modal ${isClosing ? "closing" : ""}`}>
+                <div
+                  className={`w-full md:w-1/2 bg-background text-foreground flex flex-col justify-center py-6 md:py-10 px-6 md:px-20 min-h-[400px] ${
+                    isClosing ? "slide-out-left" : "slide-in-left"
+                  }`}
                 >
-                  Send it my way
-                </button>
-              </form>
+                  <h3 className="text-2xl font-bold">
+                    Here&apos;s a bit about me.
+                  </h3>
+                  <h4 className="mt-3 mb-6">Frontend Software Engineer</h4>
+                  <p className="mb-2 leading-7">
+                    I&apos;m an American{" "}
+                    <span className="text-orange">
+                      frontend software engineer
+                    </span>{" "}
+                    with a strong passion for developing websites with great{" "}
+                    <span className="text-orange">user experiences.</span>
+                    <br />I currently work on extremely difficult engineering
+                    problems
+                  </p>
+                  <div className="flex flex-wrap">
+                    <figure className="modal__language">
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"
+                          alt="html logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="language__name">HTML</span>
+                    </figure>
 
-              {/* Loading Spinner */}
-              {isLoading && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-primary/50">
-                  <Loader size={80} className="loader" />
+                    <figure className="modal__language">
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                          alt="CSS logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="language__name">CSS</span>
+                    </figure>
+
+                    <figure className="modal__language">
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
+                          alt="TS logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="language__name">TypeScript</span>
+                    </figure>
+
+                    <figure className="modal__language">
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg"
+                          alt="React logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="language__name">React</span>
+                    </figure>
+
+                    <figure className="modal__language">
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                          alt="Next.js logo"
+                          fill
+                          className="object-contain dark:invert"
+                        />
+                      </div>
+                      <span className="language__name">Next.js</span>
+                    </figure>
+                  </div>
                 </div>
-              )}
-
-              {/* Success Message */}
-              {isSuccess && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-emerald-600 text-white text-4xl font-bold text-center p-7">
+                <div
+                  className={`w-full md:w-1/2 bg-primary text-primary-foreground py-6 md:py-10 px-6 md:px-20 flex flex-col justify-center relative min-h-[400px] ${
+                    isClosing ? "slide-out-right" : "slide-in-right"
+                  }`}
+                >
                   <div
                     className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
                     onClick={handleClose}
                   >
                     <X size={36} />
                   </div>
-                  Thanks for the message! Looking forward to speaking to you
-                  soon.
-                </div>
-              )}
+                  <h3 className="text-2xl font-bold">
+                    Let&apos;s have a chat!
+                  </h3>
+                  <h4 className="mt-3 mb-6 text-sm">
+                    I&apos;m currently open to new opportunities.
+                  </h4>
+                  <form id="contact__form" onSubmit={contact}>
+                    <div className="mb-5">
+                      <label className="text-sm font-bold">Name</label>
+                      <input
+                        className="input bg-transparent"
+                        name="user_name"
+                        type="text"
+                        required
+                        value={formData.user_name}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <div className="mb-5">
+                      <label className="text-sm font-bold">Email</label>
+                      <input
+                        className="input bg-transparent"
+                        name="user_email"
+                        type="email"
+                        required
+                        value={formData.user_email}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <div className="mb-5">
+                      <label className="text-sm font-bold">Message</label>
+                      <textarea
+                        className="input bg-transparent resize-y h-24 mt-2"
+                        name="message"
+                        required
+                        value={formData.message}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <button
+                      id="contact__submit"
+                      className="formButton"
+                      type="submit"
+                    >
+                      Send it my way
+                    </button>
+                  </form>
 
-              {/* Error Message */}
-              {isError && (
-                <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-destructive text-destructive-foreground text-2xl font-bold text-center p-7">
-                  <div
-                    className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
-                    onClick={handleClose}
-                  >
-                    <X size={36} />
-                  </div>
-                  The email service is temporarily unavailable. Please contact
-                  me directly at williamgiammona94@gmail.com
+                  {/* Loading Spinner */}
+                  {isLoading && (
+                    <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-primary/50">
+                      <Loader size={80} className="loader" />
+                    </div>
+                  )}
+
+                  {/* Success Message */}
+                  {isSuccess && (
+                    <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-emerald-600 text-white text-4xl font-bold text-center p-7">
+                      <div
+                        className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
+                        onClick={handleClose}
+                      >
+                        <X size={36} />
+                      </div>
+                      Thanks for the message! Looking forward to speaking to you
+                      soon.
+                    </div>
+                  )}
+
+                  {/* Error Message */}
+                  {isError && (
+                    <div className="absolute flex top-0 left-0 w-full h-full justify-center items-center bg-destructive text-destructive-foreground text-2xl font-bold text-center p-7">
+                      <div
+                        className="absolute top-7 right-7 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"
+                        onClick={handleClose}
+                      >
+                        <X size={36} />
+                      </div>
+                      The email service is temporarily unavailable. Please
+                      contact me directly at williamgiammona94@gmail.com
+                    </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </>
