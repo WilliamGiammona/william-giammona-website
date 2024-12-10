@@ -53,7 +53,7 @@ const Hero = () => {
           />
         </Link>
         <Link
-          href="/"
+          href="https://william-giammona-resume.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="block"
