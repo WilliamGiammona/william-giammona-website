@@ -55,7 +55,7 @@ const Footer = () => {
         <li className="relative">
           <Link
             className="link-footer relative"
-            href="/"
+            href="https://william-giammona-resume.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
