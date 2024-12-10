@@ -45,7 +45,9 @@ const Nav = () => {
   return (
     <nav className="relative font-sans flex justify-between w-full max-w-6xl mx-auto h-24 items-center px-5 z-10">
       <figure>
-        <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+        <Link href="/">
+          <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+        </Link>
       </figure>
 
       {/* Desktop Navigation */}
@@ -53,7 +55,7 @@ const Nav = () => {
         <li className="mx-3 relative">
           <Link
             className="text-foreground font-bold after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-foreground after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0"
-            href="/"
+            href="/about"
           >
             About
           </Link>
@@ -68,7 +70,10 @@ const Nav = () => {
         </li>
         <li className="mx-3 relative">
           <Link
-            onClick={() => setIsFormVisible(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsFormVisible(true);
+            }}
             className="text-foreground font-bold after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-foreground after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0"
             href="#"
           >
@@ -92,7 +97,7 @@ const Nav = () => {
           </SheetTrigger>
           <SheetContent>
             <div className="flex flex-col gap-6 mt-8">
-              <Link className="text-foreground font-bold text-lg" href="/">
+              <Link className="text-foreground font-bold text-lg" href="/about">
                 About
               </Link>
               <Link
