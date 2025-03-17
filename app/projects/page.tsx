@@ -52,7 +52,9 @@ export default function ProjectsPage() {
                       </Link>
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://gili-giammona-illustration.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Link2 size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -95,7 +97,9 @@ export default function ProjectsPage() {
                       </Link>
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://subacorp.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Link2 size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -138,7 +142,9 @@ export default function ProjectsPage() {
                       </Link>
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://e-commerce-sanity-giammona.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Link2 size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -181,7 +187,9 @@ export default function ProjectsPage() {
                       </Link>
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://globalwebthree.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Link2 size={16} className="md:w-5 md:h-5" />
                       </Link>
