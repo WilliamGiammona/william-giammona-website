@@ -4,12 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Link2 } from "lucide-react";
-import Nav from "../components/Nav";
 
 export default function ProjectsPage() {
   return (
     <>
-      <Nav />
       <main className="py-12">
         <div className="relative w-full max-w-6xl mx-auto px-6 md:px-12 xl:px-3 z-10">
           <h1 className="text-center text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-16 text-foreground">
