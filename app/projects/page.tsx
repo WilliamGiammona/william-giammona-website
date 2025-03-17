@@ -44,7 +44,9 @@ export default function ProjectsPage() {
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://github.com/WilliamGiammona/gili-illustration-website"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Github size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -85,7 +87,9 @@ export default function ProjectsPage() {
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://github.com/WilliamGiammona/subacorp"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Github size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -126,7 +130,9 @@ export default function ProjectsPage() {
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://github.com/WilliamGiammona/e-commerce-sanity"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Github size={16} className="md:w-5 md:h-5" />
                       </Link>
@@ -167,7 +173,9 @@ export default function ProjectsPage() {
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
                         className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200"
-                        href="/projects"
+                        href="https://github.com/WilliamGiammona/global-web-three-dao"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Github size={16} className="md:w-5 md:h-5" />
                       </Link>
