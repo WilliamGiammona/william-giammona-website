@@ -127,7 +127,7 @@ export default function ProjectsPage() {
                       <b>E-commerce Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
-                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS SANITY STRIPE</b>
+                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS CLERK SANITY STRIPE</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
                       A full-featured e-commerce platform built with Next.js,
