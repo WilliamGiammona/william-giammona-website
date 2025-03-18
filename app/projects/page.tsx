@@ -172,13 +172,15 @@ export default function ProjectsPage() {
                       <b>A Web3 Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
-                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
+                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS ETHERS.JS MORALIS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A decentralized application built with Next.js,
+                      TypeScript, and TailwindCSS, leveraging Ethers.js,
+                      Moralis, and Web3UIKit for blockchain integration. The
+                      platform enables users to interact with smart contracts
+                      and blockchain data through an intuitive interface,
+                      bringing Web3 functionality to mainstream users.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
