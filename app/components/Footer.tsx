@@ -54,7 +54,8 @@ const Footer = () => {
         </li>
       </ul>
       <div className="text-primary text-sm md:text-base">
-        <span className="text-xs">&#9400;</span> Made By William Giammona
+        <span className="pr-5">&#9400; {new Date().getFullYear()} </span>{" "}
+        Created By William Giammona
       </div>
     </section>
   );
