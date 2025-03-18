@@ -3,6 +3,7 @@ import "./globals.css";
 import { ModalProvider } from "@/app/components/ModalContext";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import BackgroundShapes from "@/app/components/BackgroundShapes";
+import Modal from "@/app/components/Modal";
 
 export const metadata: Metadata = {
   title: "William Giammona",
@@ -25,6 +26,7 @@ export default function RootLayout({
         >
           <ModalProvider>
             <BackgroundShapes />
+            <Modal />
             {children}
           </ModalProvider>
         </ThemeProvider>
