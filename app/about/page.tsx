@@ -5,6 +5,7 @@ import { Button } from "../components/ui/button";
 import Link from "next/link";
 import { useModal } from "../components/ModalContext";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const ContactButton = () => {
   const { setIsFormVisible } = useModal();
@@ -94,6 +95,9 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+      <div className="py-8">
+        <Footer />
+      </div>
     </>
   );
 }
