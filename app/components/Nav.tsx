@@ -46,7 +46,14 @@ const Nav = () => {
     <nav className="relative font-sans flex justify-between w-full max-w-6xl mx-auto h-24 items-center px-5 z-10">
       <figure>
         <Link href="/">
-          <Image src="/images/icon.ico" alt="Logo" width={50} height={50} />
+          <Image
+            src="/images/icon.ico"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="dark:invert"
+            style={{ backgroundColor: "transparent" }}
+          />
         </Link>
       </figure>
 
