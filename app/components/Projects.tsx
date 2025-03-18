@@ -173,7 +173,7 @@ export default function ProjectsPage() {
                   </h4>
                   <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
                     A decentralized application built with Next.js, TypeScript,
-                    and TailwindCSS, leveraging Ethers.js, Moralis, and
+                    and Tailwind CSS, leveraging Ethers.js, Moralis, and
                     Web3UIKit for blockchain integration. The platform enables
                     users to interact with smart contracts and blockchain data
                     through an intuitive interface, bringing Web3 functionality
