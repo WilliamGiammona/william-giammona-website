@@ -54,7 +54,7 @@ const Footer = () => {
         </li>
       </ul>
       <div className="text-primary text-sm md:text-base">
-        <span className="pr-5">&#9400; {new Date().getFullYear()} </span>{" "}
+        <span className="pr-5">&#9400; {new Date().getFullYear()}</span>
         Created By William Giammona
       </div>
     </section>
