@@ -30,7 +30,7 @@ export default function ProjectsPage() {
                 <div className="absolute top-0 left-0 w-full h-full bg-primary/80 dark:bg-primary/90 opacity-0 group-hover:opacity-70 transition-opacity duration-300 ease-in-out">
                   <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 text-primary-foreground text-center max-w-xl translate-y-full group-hover:translate-y-[-50%] transition-transform duration-500 ease-in-out p-4 md:p-6">
                     <figcaption className="text-left text-2xl md:text-3xl lg:text-4xl">
-                      <b>An Artist Project</b>
+                      <b>Artist Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                 <div className="absolute top-0 left-0 w-full h-full bg-primary/80 dark:bg-primary/90 opacity-0 group-hover:opacity-70 transition-opacity duration-300 ease-in-out">
                   <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 text-primary-foreground text-center max-w-xl translate-y-full group-hover:translate-y-[-50%] transition-transform duration-500 ease-in-out p-4 md:p-6">
                     <figcaption className="text-left text-2xl md:text-3xl lg:text-4xl">
-                      <b>A Corporate Project</b>
+                      <b>Corporate Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
                 <div className="absolute top-0 left-0 w-full h-full bg-primary/80 dark:bg-primary/90 opacity-0 group-hover:opacity-70 transition-opacity duration-300 ease-in-out">
                   <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 text-primary-foreground text-center max-w-xl translate-y-full group-hover:translate-y-[-50%] transition-transform duration-500 ease-in-out p-4 md:p-6">
                     <figcaption className="text-left text-2xl md:text-3xl lg:text-4xl">
-                      <b>An E-commerce Website</b>
+                      <b>E-commerce Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS SANITY STRIPE</b>
@@ -169,7 +169,7 @@ export default function ProjectsPage() {
                 <div className="absolute top-0 left-0 w-full h-full bg-primary/80 dark:bg-primary/90 opacity-0 group-hover:opacity-70 transition-opacity duration-300 ease-in-out">
                   <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 text-primary-foreground text-center max-w-xl translate-y-full group-hover:translate-y-[-50%] transition-transform duration-500 ease-in-out p-4 md:p-6">
                     <figcaption className="text-left text-2xl md:text-3xl lg:text-4xl">
-                      <b>A Web3 Project</b>
+                      <b>Web3 Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS ETHERS.JS MORALIS</b>
