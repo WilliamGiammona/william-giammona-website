@@ -4,10 +4,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Link2 } from "lucide-react";
+import Nav from "../components/Nav";
 
 export default function ProjectsPage() {
   return (
     <>
+      <Nav />
       <main className="py-12">
         <div className="relative w-full max-w-6xl mx-auto px-6 md:px-12 xl:px-3 z-10">
           <h1 className="text-center text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-16 text-foreground">
@@ -34,10 +36,12 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A portfolio website built using Next.js, Typescript, and
+                      Tailwind CSS, for a talented concept artist who also
+                      specializes in children&apos;s book illustrations. The
+                      site showcases the artist&apos;s unique style and diverse
+                      portfolio while providing a seamless, responsive
+                      experience for potential clients and art directors.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
@@ -79,10 +83,11 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A professional website for a commercial real estate
+                      company, built with Next.js using Typescript and Tailwind
+                      CSS. The platform offers an intuitive user experience,
+                      helping clients find the perfect commercial properties for
+                      their business needs.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
@@ -124,10 +129,11 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS SANITY STRIPE</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A full-featured e-commerce platform built with Next.js,
+                      Sanity for content management, and Stripe for secure
+                      payments. The site offers a seamless shopping experience
+                      with product filtering, cart functionality, and a
+                      streamlined checkout process.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
@@ -166,13 +172,15 @@ export default function ProjectsPage() {
                       <b>A Web3 Project</b>
                     </figcaption>
                     <h4 className="text-left mt-2 text-sm md:text-base">
-                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
+                      <b>NEXT.JS TYPESCRIPT TAILWINDCSS ETHERS.JS MORALIS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A decentralized application built with Next.js,
+                      TypeScript, and TailwindCSS, leveraging Ethers.js,
+                      Moralis, and Web3UIKit for blockchain integration. The
+                      platform enables users to interact with smart contracts
+                      and blockchain data through an intuitive interface,
+                      bringing Web3 functionality to mainstream users.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
