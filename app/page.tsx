@@ -14,10 +14,10 @@ export default function Home() {
         <Modal />
         <Scroll />
       </section>
-      <section className="py-12 mb-24 bg-background">
+      <section className="pt-12  mb-24 bg-background">
         <Projects />
       </section>
-      <section className="py-24 bg-background dark:bg-black">
+      <section className=" pb-24 bg-background dark:bg-black">
         <Footer />
       </section>
     </>
