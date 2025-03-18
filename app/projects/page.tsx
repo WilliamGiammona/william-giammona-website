@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Github, Link2 } from "lucide-react";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default function ProjectsPage() {
   return (
@@ -207,6 +208,9 @@ export default function ProjectsPage() {
           </ul>
         </div>
       </main>
+      <div className="py-8">
+        <Footer />
+      </div>
     </>
   );
 }
