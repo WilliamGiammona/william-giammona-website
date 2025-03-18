@@ -36,10 +36,12 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A portfolio website built using Next.js, Typescript, and
+                      Tailwind CSS, for a talented concept artist who also
+                      specializes in children&apos;s book illustrations. The
+                      site showcases the artist&apos;s unique style and diverse
+                      portfolio while providing a seamless, responsive
+                      experience for potential clients and art directors.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
@@ -81,10 +83,11 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A professional website for a commercial real estate
+                      company, built with Next.js using Typescript and Tailwind
+                      CSS. The platform offers an intuitive user experience,
+                      helping clients find the perfect commercial properties for
+                      their business needs.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
@@ -126,10 +129,11 @@ export default function ProjectsPage() {
                       <b>NEXT.JS TYPESCRIPT TAILWINDCSS SANITY STRIPE</b>
                     </h4>
                     <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio necessitatibus, tempora nobis quo vero incidunt
-                      aut ullam sequi similique sunt, iure, error voluptate
-                      facere in. Hic ipsum libero commodi ipsa.
+                      A full-featured e-commerce platform built with Next.js,
+                      Sanity for content management, and Stripe for secure
+                      payments. The site offers a seamless shopping experience
+                      with product filtering, cart functionality, and a
+                      streamlined checkout process.
                     </p>
                     <div className="flex gap-4 justify-start mt-2">
                       <Link
