@@ -8,6 +8,9 @@ import Modal from "@/app/components/Modal";
 export const metadata: Metadata = {
   title: "William Giammona",
   description: "William Giammona Website",
+  icons: {
+    icon: "/images/icon.ico",
+  },
 };
 
 export default function RootLayout({
