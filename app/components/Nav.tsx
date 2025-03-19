@@ -47,12 +47,11 @@ const Nav = () => {
       <figure>
         <Link href="/">
           <Image
-            src="/images/icon.ico"
+            src="/images/icon.png"
             alt="Logo"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             className="dark:invert"
-            style={{ backgroundColor: "transparent" }}
           />
         </Link>
       </figure>
