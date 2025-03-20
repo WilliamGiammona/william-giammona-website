@@ -61,6 +61,14 @@ const Nav = () => {
         <li className="mx-3 relative">
           <Link
             className="text-foreground font-bold after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-foreground after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0"
+            href="/"
+          >
+            Home
+          </Link>
+        </li>
+        <li className="mx-3 relative">
+          <Link
+            className="text-foreground font-bold after:content-[''] after:absolute after:-bottom-1 after:h-1 after:w-0 after:bg-foreground after:right-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0"
             href="/about"
           >
             About
