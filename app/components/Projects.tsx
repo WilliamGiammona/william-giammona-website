@@ -120,17 +120,18 @@ export default function ProjectsPage() {
               <div className="absolute top-0 left-0 w-full h-full bg-primary/80 dark:bg-primary/90 opacity-0 group-hover:opacity-70 transition-opacity duration-300 ease-in-out">
                 <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 text-primary-foreground text-center max-w-xl translate-y-full group-hover:translate-y-[-50%] transition-transform duration-500 ease-in-out p-4 md:p-6">
                   <figcaption className="text-left text-2xl md:text-3xl lg:text-4xl">
-                    <b>E-commerce Project</b>
+                    <b>Demo E-commerce Project</b>
                   </figcaption>
                   <h4 className="text-left mt-2 text-sm md:text-base">
                     <b>NEXT.JS TYPESCRIPT TAILWINDCSS SANITY STRIPE</b>
                   </h4>
                   <p className="max-w-lg text-left my-2 md:my-4 text-sm md:text-base hidden md:block">
-                    A full-featured e-commerce platform built with Next.js,
-                    Sanity for content management, and Stripe for secure
-                    payments. The site offers a seamless shopping experience
-                    with product filtering, cart functionality, and a
-                    streamlined checkout process.
+                    A full-featured demonstration e-commerce platform built with
+                    Next.js, Sanity for content management, and Stripe for
+                    secure payments. The site offers a seamless shopping
+                    experience with product filtering, cart functionality, and a
+                    streamlined checkout process. (for demonstration purposed
+                    only)
                   </p>
                   <div className="flex gap-4 justify-start mt-2">
                     <Link
