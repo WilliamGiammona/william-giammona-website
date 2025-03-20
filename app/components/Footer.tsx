@@ -55,7 +55,7 @@ const Footer = () => {
       </ul>
       <div className="text-primary text-sm md:text-base">
         <span className="pr-5">&#9400; {new Date().getFullYear()}</span>
-        William Giammona. All rights reserved.
+        William Giammona, all rights reserved.
       </div>
     </section>
   );
