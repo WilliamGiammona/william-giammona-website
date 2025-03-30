@@ -203,7 +203,7 @@ const Modal = () => {
                     <div className="mb-5">
                       <label className="text-sm font-bold">Name</label>
                       <input
-                        className="input bg-transparent"
+                        className="input bg-transparent text-background dark:text-primary-foreground"
                         name="user_name"
                         type="text"
                         required
@@ -214,7 +214,7 @@ const Modal = () => {
                     <div className="mb-5">
                       <label className="text-sm font-bold">Email</label>
                       <input
-                        className="input bg-transparent"
+                        className="input bg-transparent text-background dark:text-primary-foreground"
                         name="user_email"
                         type="email"
                         required
@@ -225,7 +225,7 @@ const Modal = () => {
                     <div className="mb-5">
                       <label className="text-sm font-bold">Message</label>
                       <textarea
-                        className="input bg-transparent resize-y h-24 mt-2"
+                        className="input bg-transparent resize-y h-24 mt-2 text-background dark:text-primary-foreground"
                         name="message"
                         required
                         value={formData.message}
