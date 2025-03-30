@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "William Giammona",
   description: "William Giammona Website",
   icons: {
-    icon: "/images/icon.ico",
+    icon: "/images/favicon.png",
   },
 };
 
