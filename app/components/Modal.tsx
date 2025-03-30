@@ -68,6 +68,13 @@ const Modal = () => {
     setTimeout(() => {
       setIsFormVisible(false);
       setIsClosing(false);
+      setIsSuccess(false);
+      setIsError(false);
+      setFormData({
+        user_name: "",
+        user_email: "",
+        message: "",
+      });
     }, 500);
   };
 
