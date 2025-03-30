@@ -106,7 +106,7 @@ const Nav = () => {
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="h-9 w-9">
               <Menu className="h-[1.2rem] w-[1.2rem]" />
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">Open Menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent>
